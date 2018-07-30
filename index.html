@@ -11,61 +11,78 @@
 		<img src="" alt="">
 	</div>
 	<main>
-		<div>
-			<h1 id="title">Survey Form</h1>
-			<p id="description">Let us know how we can improve freeCodeCamp</p>
-			<p>* Required</p>
-		</div>
-		<div id="field-01">
-			<p>Name (short input)</p>
-		</div>
-		<div id="field-02">
-			<p>Email (short input + validation)</p>
-		</div>
-		<div id="field-03">
-			<p>Age (short input + # validation + range)</p>
-		</div>
-		<div id="field-04">
-			<p>Which option best describes your current role? (dropdown)</p>
-			student
-			Full Time Job
-			Full Time Learner
-			Prefer not to say
-			Other
-		</div>
-		<div id="field-05">
-			<p>How likely is that you would recommend freeCodeCamp to a friend? (Radiobox)</p>
-			Definitely
-			Maybe
-			Not Sure
-		</div>
-		<div id="field-06">
-			<p>What do you like most in FCC: (dropdown)</p>
-			Challenges
-			Projects
-			Community
-			Open Source
-		</div>
-		<div id="field-07">
-			<p>Things that should be improved in the future (Check all that apply): (Checkbox)</p>
-			Front-end Projects
-			Back-end Projects
-			Data Visualization
-			Challenges
-			Open Source Community
-			Gitter help rooms
-			Videos
-			City Meetups
-			Wiki
-			Forum
-			Additional Courses
-			Other: (short input)
-		</div>
-		<div id="field-08">
-			<p>Any Comments or Suggestions? (long 1 liner paragraph text)</p>
-		</div>
-
-		Submit
+		<form id="survey-form" action="" method="get">
+			<!-- <form action="">
+				<input type="text" name="q">
+				<input type="submit" >
+			</form> -->
+			<div>
+				<h1 id="title">Survey Form</h1>
+				<p id="description">Let us know how we can improve freeCodeCamp</p>
+				<p>* Required</p>
+			</div>
+			<div id="field-01">
+				<label for="name" id="name-label">Name</label>
+				<input id="name" type="text" placeholder="Your answer" required>
+			</div>
+			<div id="field-02">
+				<label for="email" id="email-label">Email ( + validation)</label>
+				<input id="email" type="email" placeholder="Your answer" required>
+			</div>
+			<div id="field-03">
+				<label for="number" id="number-label">Age ( + # validation + range)</label>
+				<input id="number" type="number" placeholder="Your answer" min="1" max="103" required>
+			</div>
+			<div id="field-04">
+				<label for="">Which option best describes your current role</label>
+				<select name="current-role" id="dropdown">
+					<option >student</option>
+					<option >Full Time Job</option>
+					<option >Full Time Learner</option>
+					<option >Prefer not to say</option>
+					<option >Other</option>
+				</select>
+			</div>
+			<div id="field-05">
+				<div>How likely is that you would recommend freeCodeCamp to a friend?</div>
+				<label for="definitely">
+					<input id="definitely" type="radio" name="recommend-factor" value="Definitely">Definitely
+				</label>
+				<label for="maybe">
+					<input id="maybe" type="radio" name="recommend-factor" value="Maybe">Maybe
+				</label>
+				<label for="not-sure">
+					<input id="not-sure" type="radio" name="recommend-factor" value="Not Sure">Not Sure
+				</label>
+			</div>
+			<div id="field-06">
+				<label for="">What do you like most in FCC:</label>
+				Challenges
+				Projects
+				Community
+				Open Source
+			</div>
+			<div id="field-07">
+				<p>Things that should be improved in the future (Check all that apply): (Checkbox)</p>
+				Front-end Projects
+				Back-end Projects
+				Data Visualization
+				Challenges
+				Open Source Community
+				Gitter help rooms
+				Videos
+				City Meetups
+				Wiki
+				Forum
+				Additional Courses
+				Other: (short input)
+			</div>
+			<div id="field-08">
+				<p>Any Comments or Suggestions? (long 1 liner paragraph text)</p>
+			</div>
+			
+			Submit
+		</form>
 
 	</main>
 	<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->

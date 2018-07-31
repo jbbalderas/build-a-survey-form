@@ -23,18 +23,18 @@
 			</div>
 			<div id="field-01">
 				<label for="name" id="name-label">Name</label>
-				<input id="name" type="text" placeholder="Your answer" required>
+				<input id="name" name="name" type="text" placeholder="Your answer" required>
 			</div>
 			<div id="field-02">
 				<label for="email" id="email-label">Email ( + validation)</label>
-				<input id="email" type="email" placeholder="Your answer" required>
+				<input id="email" name="email" type="email" placeholder="Your answer" required>
 			</div>
 			<div id="field-03">
 				<label for="number" id="number-label">Age ( + # validation + range)</label>
-				<input id="number" type="number" placeholder="Your answer" min="1" max="103" required>
+				<input id="number" name="age" type="number" placeholder="Your answer" min="1" max="103" required>
 			</div>
 			<div id="field-04">
-				<label for="">Which option best describes your current role</label>
+				<label for="dropdown">Which option best describes your current role</label>
 				<select name="current-role" id="dropdown">
 					<option >student</option>
 					<option >Full Time Job</option>
@@ -56,35 +56,64 @@
 				</label>
 			</div>
 			<div id="field-06">
-				<label for="">What do you like most in FCC:</label>
-				Challenges
-				Projects
-				Community
-				Open Source
+				<label for="dropdown-like">What do you like most in FCC: </label>
+				<select name="most-like" id="dropdown-like">
+					<option >Challenges</option>
+					<option >Projects</option>
+					<option >Community</option>
+					<option >Open Source</option>
+				</select>
 			</div>
 			<div id="field-07">
-				<p>Things that should be improved in the future (Check all that apply): (Checkbox)</p>
-				Front-end Projects
-				Back-end Projects
-				Data Visualization
-				Challenges
-				Open Source Community
-				Gitter help rooms
-				Videos
-				City Meetups
-				Wiki
-				Forum
-				Additional Courses
-				Other: (short input)
+				<label for="checkbox-improve">Things that should be improved in the future (Check all that apply):</label>
+
+				<label for="fe">
+					<input type="checkbox" id="fe" name="improve" value="Front-end Projects">Front-end Projects
+				</label>
+				<label for="be">
+					<input type="checkbox" id="be" name="improve" value="Back-end Projects">Back-end Projects
+				</label>
+				<label for="dv">
+					<input type="checkbox" id="dv" name="improve" value="Data Visualization">Data Visualization
+				</label>
+				<label for="challenges">
+					<input type="checkbox" id="challenges" name="improve" value="Challenges">Challenges
+				</label>
+				<label for="osc">
+					<input type="checkbox" id="osc" name="improve" value="Open Source Community">Open Source Community
+				</label>
+				<label for="gitter">
+					<input type="checkbox" id="gitter name="improve" value="Gitter help rooms">Gitter help rooms
+				</label>
+				<label for="videos">
+					<input type="checkbox" id="videos" name="improve" value="Videos">Videos
+				</label>
+				<label for="meetups">
+					<input type="checkbox" id="meetups" name="improve" value="City Meetups">City Meetups
+				</label>
+				<label for="wiki">
+					<input type="checkbox" id="wiki" name="improve" value="Wiki">Wiki
+				</label>
+				<label for="forum">
+					<input type="checkbox" id="forum" name="improve" value="Forum">Forum
+				</label>
+				<label for="add-courses">
+					<input type="checkbox" id="add-courses" name="improve" value="Additional Courses">Additional Courses
+				</label>
+				<label for="other-improve">
+					<input type="checkbox" id="other-improve" name="improve" value="Other:"><label for="">Other: <input type="text" name="other-improve"></label>
+				</label>
 			</div>
 			<div id="field-08">
-				<p>Any Comments or Suggestions? (long 1 liner paragraph text)</p>
+				<label for="textarea">Any Comments or Suggestions?</label>
+				<textarea name="comments" id="textarea" cols="50" rows="1"></textarea>
 			</div>
 			
-			Submit
+			<!-- <input type="submit"> -->
+			<button id="submit">submit</button>
 		</form>
 
 	</main>
-	<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

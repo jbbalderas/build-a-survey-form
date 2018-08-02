@@ -18,6 +18,7 @@ body, h1{
 body{
 	background-color: #CEDEE1;
 	font-family: Arial, Helvetica, sans-serif;
+	color: #212121;
 }
 
 #banner{
@@ -36,22 +37,55 @@ main{
 	position: relative;
 	top: -100px;
 
-	padding: 40px 30px;
+	padding: 35px 35px;
 }
 
 h1{
 	/*line-height: 26px;*/
-	color: #212121;
 	font-size: 32px;
 	font-weight: lighter;
+	margin-bottom: 24px;
+}
+
+.notice{
+	color: #D3483E;
+}
+.form-div{
+	margin: 22px 0;
+}
+
+main p{
+	font-size: .82rem;
+	margin: 18px 0;
 }
 
 input, label{
 	display: block;
 }
 
+input[type="radio"],
+input[type="checkbox"]{
+	display: inline-block;
+}
+
+[type="text"]~label{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#other-improve+input[type="text"]{
+	display: inline-block;
+}
+
 .footer{
 	text-align: center;
 	position: relative;
 	top: -80px;
+
+}
+
+.footer{
+	font-size: .82rem;
+	margin-top: 18px;
+	margin-bottom: 18px;
 }

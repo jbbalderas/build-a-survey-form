@@ -19,21 +19,21 @@
 			<div>
 				<h1 id="title">Survey Form</h1>
 				<p id="description">Let us know how we can improve freeCodeCamp</p>
-				<p>* Required</p>
+				<p class="notice">* Required</p>
 			</div>
-			<div id="field-01">
+			<div id="field-01" class="form-div">
 				<label for="name" id="name-label">Name</label>
 				<input id="name" name="name" type="text" placeholder="Your answer" required>
 			</div>
-			<div id="field-02">
-				<label for="email" id="email-label">Email ( + validation)</label>
+			<div id="field-02" class="form-div">
+				<label for="email" id="email-label">Email</label>
 				<input id="email" name="email" type="email" placeholder="Your answer" required>
 			</div>
-			<div id="field-03">
-				<label for="number" id="number-label">Age ( + # validation + range)</label>
+			<div id="field-03" class="form-div">
+				<label for="number" id="number-label">Age</label>
 				<input id="number" name="age" type="number" placeholder="Your answer" min="1" max="103" required>
 			</div>
-			<div id="field-04">
+			<div id="field-04" class="form-div">
 				<label for="dropdown">Which option best describes your current role</label>
 				<select name="current-role" id="dropdown">
 					<option >student</option>
@@ -43,7 +43,7 @@
 					<option >Other</option>
 				</select>
 			</div>
-			<div id="field-05">
+			<div id="field-05" class="form-div">
 				<div>How likely is that you would recommend freeCodeCamp to a friend?</div>
 				<label for="definitely">
 					<input id="definitely" type="radio" name="recommend-factor" value="Definitely">Definitely
@@ -55,7 +55,7 @@
 					<input id="not-sure" type="radio" name="recommend-factor" value="Not Sure">Not Sure
 				</label>
 			</div>
-			<div id="field-06">
+			<div id="field-06" class="form-div">
 				<label for="dropdown-like">What do you like most in FCC: </label>
 				<select name="most-like" id="dropdown-like">
 					<option >Challenges</option>
@@ -64,7 +64,7 @@
 					<option >Open Source</option>
 				</select>
 			</div>
-			<div id="field-07">
+			<div id="field-07" class="form-div">
 				<label for="checkbox-improve">Things that should be improved in the future (Check all that apply):</label>
 
 				<label for="fe">
@@ -101,14 +101,14 @@
 					<input type="checkbox" id="add-courses" name="improve" value="Additional Courses">Additional Courses
 				</label>
 				<label for="other-improve">
-					<input type="checkbox" id="other-improve" name="improve" value="Other:"><label for="">Other: <input type="text" name="other-improve"></label>
+					<input type="checkbox" id="other-improve" name="improve" value="Other:">Others:<input type="text" name="other-improve">
 				</label>
 			</div>
-			<div id="field-08">
+			<div id="field-08" class="form-div">
 				<label for="textarea">Any Comments or Suggestions?</label>
 				<textarea name="comments" id="textarea" cols="50" rows="1"></textarea>
 			</div>
-			<button id="submit">submit</button>
+			<button id="submit">SUBMIT</button>
 			<p>Do not submit passwords anymore through Google Forms.</p>
 		</form>
 

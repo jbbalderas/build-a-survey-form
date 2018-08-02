@@ -65,7 +65,6 @@ h1{
 
 .form-div label{
 	font-size: 1.25rem;
-	/*line-height: 1.3rem;*/
 }
 
 .form-div span{
@@ -103,6 +102,13 @@ textarea:focus{
 	outline: none;
 }
 
+select{
+	padding: 0 15px;
+	outline: none;
+	font-size: 1rem;
+	border:0;
+}
+
 input[type="text"],
 input[type="email"]{
 	width: 50%;
@@ -116,6 +122,22 @@ input[type="number"]{
 select{
 	height: 42px;
 	padding: 0 auto;
+	font-size: .83rem;
+	font-weight: bolder;
+}
+
+select option{
+	color: #212121;
+	font-weight: bold;
+	font-size: .83rem;
+}
+
+select:invalid, select option[value=""]{
+	color: rgb(181,181,181);
+}
+
+select:active{
+	background-color: rgba(181,181,181,.4);
 }
 
 .footer{

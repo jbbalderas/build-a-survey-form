@@ -35,8 +35,9 @@
 			</div>
 			<div id="field-04" class="form-div">
 				<label for="dropdown">Which option best describes your current role?</label>
-				<select name="current-role" id="dropdown">
-					<option >student</option>
+				<select name="current-role" id="dropdown" required>
+					<option class="opt-selected" selected value="">Choose</option>
+					<option >Student</option>
 					<option >Full Time Job</option>
 					<option >Full Time Learner</option>
 					<option >Prefer not to say</option>
@@ -57,7 +58,8 @@
 			</div>
 			<div id="field-06" class="form-div">
 				<label for="dropdown-like">What do you like most in FCC: </label>
-				<select name="most-like" id="dropdown-like">
+				<select name="most-like" id="dropdown-like" required>
+					<option class="opt-selected" selected value="">Choose</option>
 					<option >Challenges</option>
 					<option >Projects</option>
 					<option >Community</option>

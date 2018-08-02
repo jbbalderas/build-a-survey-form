@@ -33,8 +33,8 @@ body{
 }
 
 #banner{
-	background-color: darkblue;
-	/*background-image: url(https://lh3.googleusercontent.com/-DNzbUzxmJHsQph-vBWKhabJXtu2lB8m_BZaekUFPm90P8-vbrMeDAo0yy-lHsMbHEPi2wVeBw=w1200); */
+	/*background-color: darkblue;*/
+	background-image: url(https://lh3.googleusercontent.com/-DNzbUzxmJHsQph-vBWKhabJXtu2lB8m_BZaekUFPm90P8-vbrMeDAo0yy-lHsMbHEPi2wVeBw=w1200); 
 	height: 280px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -52,7 +52,6 @@ main{
 }
 
 h1{
-	/*line-height: 26px;*/
 	font-size: 32px;
 	font-weight: lighter;
 	margin-bottom: 24px;
@@ -194,7 +193,6 @@ input[type="checkbox"]+label{
     position: absolute;
     top: 5px;
     left: 5px;
-     /*border: 2px solid #161e3d; */
     border-radius: 100%;
     -webkit-transition: all 0.5s ease;
     transition: all 0.7s ease;
@@ -251,7 +249,6 @@ input[type="checkbox"]+label{
     position: absolute;
     top: .1px;
     left: .1px;
-     /*border: 2px solid #161e3d; */
     border-radius: 15%;
     -webkit-transition: all 0.5s ease;
     transition: all 0.7s ease;
@@ -270,6 +267,8 @@ input[type="checkbox"]+label{
     transform: scale(1);
 }
 /*end code snippet (modified)*/
+
+
 .footer{
 	text-align: center;
 	position: relative;

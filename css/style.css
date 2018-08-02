@@ -30,8 +30,8 @@ body{
 }
 
 #banner{
-	/*background-color: violet;*/
-	background-image: url(https://lh3.googleusercontent.com/-DNzbUzxmJHsQph-vBWKhabJXtu2lB8m_BZaekUFPm90P8-vbrMeDAo0yy-lHsMbHEPi2wVeBw=w1200); 
+	background-color: darkblue;
+	/*background-image: url(https://lh3.googleusercontent.com/-DNzbUzxmJHsQph-vBWKhabJXtu2lB8m_BZaekUFPm90P8-vbrMeDAo0yy-lHsMbHEPi2wVeBw=w1200); */
 	height: 280px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -60,7 +60,7 @@ h1{
 }
 
 .form-div{
-	margin: 22px 0;
+	padding: 22px 0;
 }
 
 .form-div label{
@@ -94,7 +94,13 @@ input:not([type="radio"]):not([type="checkbox"]),
 textarea{
 	font-size: 1rem;
 	border:0;
-	border-bottom: 1px solid #b5b5b5;
+	border-bottom: 1px solid rgba(181,181,181,.5);
+}
+
+input:not([type="radio"]):not([type="checkbox"]):focus,
+textarea:focus{
+	border-bottom: 2px solid #000;
+	outline: none;
 }
 
 input[type="text"],
@@ -105,6 +111,11 @@ input[type="email"]{
 
 input[type="number"]{
 	width: 22%;
+}
+
+select{
+	height: 42px;
+	padding: 0 auto;
 }
 
 .footer{

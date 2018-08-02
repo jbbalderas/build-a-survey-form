@@ -45,16 +45,20 @@
 				</select>
 			</div>
 			<div id="field-05" class="form-div">
-				<div>How likely is that you would recommend freeCodeCamp to a friend?</div>
-				<label for="definitely">
-					<input id="definitely" type="radio" name="recommend-factor" value="Definitely">Definitely
-				</label>
-				<label for="maybe">
-					<input id="maybe" type="radio" name="recommend-factor" value="Maybe">Maybe
-				</label>
-				<label for="not-sure">
-					<input id="not-sure" type="radio" name="recommend-factor" value="Not Sure">Not Sure
-				</label>
+				<fieldset><legend>How likely is that you would recommend freeCodeCamp to a friend?<span class="notice"> *</span></legend>
+					<div>
+						<input id="definitely" type="radio" name="recommend-factor" value="Definitely">
+						<label for="definitely">Definitely</label>
+					</div>
+					<div>
+						<input id="maybe" type="radio" name="recommend-factor" value="Maybe">
+						<label for="maybe">Maybe</label>
+					</div>
+					<div>
+						<input id="not-sure" type="radio" name="recommend-factor" value="Not Sure">
+						<label for="not-sure">Not Sure</label>
+					</div>
+				</fieldset>
 			</div>
 			<div id="field-06" class="form-div">
 				<label for="dropdown-like">What do you like most in FCC: </label>
@@ -69,42 +73,54 @@
 			<div id="field-07" class="form-div">
 				<label for="checkbox-improve">Things that should be improved in the future (Check all that apply):</label>
 
-				<label for="fe">
-					<input type="checkbox" id="fe" name="improve" value="Front-end Projects">Front-end Projects
-				</label>
-				<label for="be">
-					<input type="checkbox" id="be" name="improve" value="Back-end Projects">Back-end Projects
-				</label>
-				<label for="dv">
-					<input type="checkbox" id="dv" name="improve" value="Data Visualization">Data Visualization
-				</label>
-				<label for="challenges">
-					<input type="checkbox" id="challenges" name="improve" value="Challenges">Challenges
-				</label>
-				<label for="osc">
-					<input type="checkbox" id="osc" name="improve" value="Open Source Community">Open Source Community
-				</label>
-				<label for="gitter">
-					<input type="checkbox" id="gitter name="improve" value="Gitter help rooms">Gitter help rooms
-				</label>
-				<label for="videos">
-					<input type="checkbox" id="videos" name="improve" value="Videos">Videos
-				</label>
-				<label for="meetups">
-					<input type="checkbox" id="meetups" name="improve" value="City Meetups">City Meetups
-				</label>
-				<label for="wiki">
-					<input type="checkbox" id="wiki" name="improve" value="Wiki">Wiki
-				</label>
-				<label for="forum">
-					<input type="checkbox" id="forum" name="improve" value="Forum">Forum
-				</label>
-				<label for="add-courses">
-					<input type="checkbox" id="add-courses" name="improve" value="Additional Courses">Additional Courses
-				</label>
-				<label for="other-improve">
-					<input type="checkbox" id="other-improve" name="improve" value="Other:">Others:<input type="text" name="other-improve">
-				</label>
+				<div>
+					<input type="checkbox" id="fe" name="improve" value="Front-end Projects">
+					<label for="fe">Front-end Projects</label>
+				</div>
+				<div>
+					<input type="checkbox" id="be" name="improve" value="Back-end Projects">
+					<label for="be">Back-end Projects</label>
+				</div>
+				<div>
+					<input type="checkbox" id="dv" name="improve" value="Data Visualization">
+					<label for="dv">Data Visualization</label>
+				</div>
+				<div>
+					<input type="checkbox" id="challenges" name="improve" value="Challenges">
+					<label for="challenges">Challenges</label>
+				</div>
+				<div>
+					<input type="checkbox" id="osc" name="improve" value="Open Source Community">
+					<label for="osc">Open Source Community</label>
+				</div>
+				<div>
+					<input type="checkbox" id="gitter name="improve" value="Gitter help rooms">
+					<label for="gitter">Gitter help rooms</label>
+				</div>
+				<div>
+					<input type="checkbox" id="videos" name="improve" value="Videos">
+					<label for="videos">Videos</label>
+				</div>
+				<div>
+					<input type="checkbox" id="meetups" name="improve" value="City Meetups">
+					<label for="meetups">City Meetups</label>
+				</div>
+				<div>
+					<input type="checkbox" id="wiki" name="improve" value="Wiki">
+					<label for="wiki">Wiki</label>
+				</div>
+				<div>
+					<input type="checkbox" id="forum" name="improve" value="Forum">
+					<label for="forum">Forum</label>
+				</div>
+				<div>
+					<input type="checkbox" id="add-courses" name="improve" value="Additional Courses">
+					<label for="add-courses">Additional Courses</label>
+				</div>
+				<div>
+					<input type="checkbox" id="other-improve" name="improve" value="Other:"><input type="text" name="other-improve">
+					<label for="other-improve">Others:</label>
+				</div>
 			</div>
 			<div id="field-08" class="form-div">
 				<label for="textarea">Any Comments or Suggestions?</label>

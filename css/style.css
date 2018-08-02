@@ -1,8 +1,11 @@
-*, *:before, *:after {
+*, 
+*:before, 
+*:after {
 	box-sizing: border-box;
 }
 
-body, h1{
+body, 
+h1{
 	margin: 0;	
 }
 
@@ -63,7 +66,8 @@ h1{
 	padding: 22px 0;
 }
 
-.form-div label{
+.form-div label, 
+legend{
 	font-size: 1.25rem;
 }
 
@@ -76,13 +80,9 @@ main p{
 	margin: 18px 0;
 }
 
-input, label{
+input, 
+label{
 	display: block;
-}
-
-input[type="radio"],
-input[type="checkbox"]{
-	display: inline-block;
 }
 
 #other-improve+input[type="text"]{
@@ -125,20 +125,38 @@ select{
 	font-size: .83rem;
 	font-weight: bolder;
 }
-
+/*to make the first option "choose" only appear gray, else black*/
 select option{
 	color: #212121;
 	font-weight: bold;
 	font-size: .83rem;
 }
 
-select:invalid, select option[value=""]{
+select:invalid, 
+select option[value=""]{
 	color: rgb(181,181,181);
 }
-
+/**/
 select:active{
 	background-color: rgba(181,181,181,.4);
 }
+
+
+fieldset, 
+legend{
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="radio"]+label,
+input[type="checkbox"]+label{
+	font-size: 1.06rem; /*ideally 17px*/
+	display: inline-block;
+}
+
 
 .footer{
 	text-align: center;

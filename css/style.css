@@ -15,6 +15,14 @@ body, h1{
 	min-width: 640px;
 }
 
+.margin-top{
+	margin-top: 25px;
+}
+
+.margin-btm{
+	margin-bottom: 25px;
+}
+
 body{
 	background-color: #CEDEE1;
 	font-family: Arial, Helvetica, sans-serif;
@@ -50,8 +58,18 @@ h1{
 .notice{
 	color: #D3483E;
 }
+
 .form-div{
 	margin: 22px 0;
+}
+
+.form-div label{
+	font-size: 1.25rem;
+	/*line-height: 1.3rem;*/
+}
+
+.form-div span{
+	font-size: 1.35rem;
 }
 
 main p{
@@ -68,13 +86,25 @@ input[type="checkbox"]{
 	display: inline-block;
 }
 
-[type="text"]~label{
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
 #other-improve+input[type="text"]{
 	display: inline-block;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+textarea{
+	font-size: 1rem;
+	border:0;
+	border-bottom: 1px solid #b5b5b5;
+}
+
+input[type="text"],
+input[type="email"]{
+	width: 50%;
+
+}
+
+input[type="number"]{
+	width: 22%;
 }
 
 .footer{

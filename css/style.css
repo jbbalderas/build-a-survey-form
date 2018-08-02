@@ -85,7 +85,7 @@ label{
 	display: block;
 }
 
-#other-improve+input[type="text"]{
+#other-improve~input[type="text"]{
 	display: inline-block;
 }
 

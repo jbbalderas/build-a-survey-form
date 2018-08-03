@@ -19,11 +19,11 @@ h1{
 }
 
 .margin-top{
-	margin-top: 25px;
+	margin-top: 15px;
 }
 
 .margin-btm{
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 
 body{
@@ -79,9 +79,6 @@ main p{
 	margin: 18px 0;
 }
 
-p{
-	color: grey;
-}
 input, 
 label{
 	display: block;
@@ -277,6 +274,7 @@ input[type="checkbox"]+label{
 textarea{
 	width: 100%;
 	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 18px;
 }
 
 button{
@@ -288,14 +286,15 @@ button{
 	border-radius: 5%;
 }
 
+#pw-notice{
+	color: grey;
+}
+
 .footer{
 	text-align: center;
 	position: relative;
 	top: -80px;
 
-}
-
-.footer{
 	font-size: .82rem;
 	margin-top: 18px;
 	margin-bottom: 18px;

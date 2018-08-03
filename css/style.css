@@ -84,10 +84,6 @@ label{
 	display: block;
 }
 
-#other-improve~input[type="text"]{
-	display: inline-block;
-}
-
 input:not([type="radio"]):not([type="checkbox"]),
 textarea{
 	font-size: 1rem;
@@ -268,7 +264,16 @@ input[type="checkbox"]+label{
 }
 /*end code snippet (modified)*/
 
+#other-improve~input[type="text"]{
+	display: inline-block;
+	/*float: right;*/
+	width: 84%;
+}
 
+textarea{
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
 .footer{
 	text-align: center;
 	position: relative;

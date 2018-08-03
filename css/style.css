@@ -79,6 +79,9 @@ main p{
 	margin: 18px 0;
 }
 
+p{
+	color: grey;
+}
 input, 
 label{
 	display: block;
@@ -150,6 +153,7 @@ input[type="radio"]+label,
 input[type="checkbox"]+label{
 	font-size: 1.06rem; /*ideally 17px*/
 	display: inline-block;
+	margin-top: 24px;
 }
 
 /* Custom radio button https://codepen.io/manabox/pen/raQmpL (modified) */
@@ -274,6 +278,16 @@ textarea{
 	width: 100%;
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+button{
+	background-color: #4285f4;
+	color: white;
+	font-weight: bolder;
+	border: none;
+	padding: 10px 18px;
+	border-radius: 5%;
+}
+
 .footer{
 	text-align: center;
 	position: relative;
